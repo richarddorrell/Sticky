@@ -1,0 +1,132 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        
+        
+        <script>
+            $(function() {
+                $('#menu li a').on('click', function(){
+                    $('li a.current').removeClass('current');
+                    $(this).addClass('current');
+                });
+            });
+        </script>
+        
+        <script>
+            $(window).scroll(function() {    
+                var scroll = $(window).scrollTop();
+                //>=, not <=
+                    if (scroll >= 800) {
+                    //clearHeader, not clearheader - caps H
+                        $("#menu").addClass("show");
+                        $("#menu a").removeClass("current");
+                        $("#menu a#details").addClass("current");
+                    } 
+                    if (scroll >= 1450) {
+                    //clearHeader, not clearheader - caps H
+                        $("#menu").addClass("show");
+                        $("#menu a").removeClass("current");
+                        $("#menu a#rating").addClass("current");
+                    } 
+                    if (scroll >= 1990) {
+                    //clearHeader, not clearheader - caps H
+                        $("#menu").addClass("show");
+                        $("#menu a").removeClass("current");
+                        $("#menu a#delivery").addClass("current");
+                    } 
+                    if (scroll >= 2270) {
+                    //clearHeader, not clearheader - caps H
+                        $("#menu").addClass("show");
+                        $("#menu a").removeClass("current");
+                        $("#menu a#questions").addClass("current");
+                    } 
+                    if (scroll >= 2833) {
+                    //clearHeader, not clearheader - caps H
+                        $("#menu").addClass("show");
+                        $("#menu a").removeClass("current");
+                        $("#menu a#returns").addClass("current");
+                    } 
+                    if (scroll >= 3210) {
+                    //clearHeader, not clearheader - caps H
+                        $("#menu").addClass("show");
+                        $("#menu a").removeClass("current");
+                        $("#menu a#extras").addClass("current");
+                    } 
+                    if (scroll >= 3760) {
+                    //clearHeader, not clearheader - caps H
+                        $("#menu").addClass("show");
+                        $("#menu a").removeClass("current");
+                        $("#menu a#alternatives").addClass("current");
+                    } 
+                    if (scroll >= 4283) {
+                    //clearHeader, not clearheader - caps H
+                        $("#menu").addClass("show");
+                        $("#menu a").removeClass("current");
+                        $("#menu a#special").addClass("current");
+                    } 
+                    if (scroll < 800) {
+                    //clearHeader, not clearheader - caps H
+                        $("#menu").removeClass("show");
+                    } 
+                                       
+}); //missing );
+        </script>
+        
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div id="menu">
+            <ul>
+                <li><a id="details" href="#details1">Details</a></li>    
+                <li><a id="rating" href="#rating1">Ratings</a></li> 
+                <li><a id="delivery" href="#delivery1">Delivery</a></li>       
+                <li><a id="questions" href="#questions1">Questions &amp; Answers</a></li>    
+                <li><a id="returns" href="#returns1">Returns &amp; Refunds</a></li>    
+                <li><a id="extras" href="#extras1">Essential Extras</a></li>    
+                <li><a id="alternatives" href="#alternatives1">Alternatives</a></li>    
+                <li><a id="special" href="#special1">Special Offers</a></li>      
+            </ul>
+        </div>
+        
+        <div class="details"><a name="details1">Details</a></div>
+        <div class="rating"><a name="rating1">Rating</a></div>
+        <div class="delivery"><a name="delivery1">Delivery</a></div>
+        <div class="questions"><a name="questions1">Q&amp;A</a></div>
+        <div class="returns"><a name="returns1">Returns</a></div>
+        <div class="extras"><a name="extras1">Extras</a></div>
+        <div class="alternatives"><a name="alternatives1">Alternatives</a></div>
+        <div class="special"><a name="special1">Special Offers</a></div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
