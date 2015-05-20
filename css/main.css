@@ -22,7 +22,7 @@ html {
 }
 
 div.details, div.rating, div.delivery, div.questions, div.returns, div.extras, div.alternatives, div.special {
-    position: absolute;
+    position: absolute; visibility: hidden;
 }
 div.details {
     top: 880px;
